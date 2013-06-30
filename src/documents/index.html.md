@@ -13,7 +13,7 @@ title: 'Home'
 <script type="text/x-handlebars" data-template-name="index">
   <ul>
   {{#each item in model}}
-    <li>{{item}}</li>
+    <li>{{item.name}}</li>
   {{/each}}
   </ul>
 </script>

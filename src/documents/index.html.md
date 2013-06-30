@@ -1,0 +1,19 @@
+--- 
+layout: 'default'
+title: 'Home'
+---
+
+
+<script type="text/x-handlebars">
+  <h2>Welcome to Ember.js</h2>
+  {{outlet}}
+</script>
+
+
+<script type="text/x-handlebars" data-template-name="index">
+  <ul>
+  {{#each item in model}}
+    <li>{{item}}</li>
+  {{/each}}
+  </ul>
+</script>

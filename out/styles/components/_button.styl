@@ -1,0 +1,42 @@
+input[type='submit'], button, .button, .chzn-container > a > span
+  -webkit-appearance none
+  display inline-block
+  padding (unit * 0.4) unit (unit * 0.3)
+  box-sizing content-box
+  color background
+  background-color call_to_action
+  border 0
+  border-radius 0
+  cursor pointer
+  height auto
+  width auto !important
+  text-align center
+  transition background-color 0.5s
+
+  &:hover, &:focus
+    background-color lighten(call_to_action, 10%)
+    outline 0
+
+.chzn-container > a
+  display inline-block
+  position relative
+  padding-right (unit * 1.5)
+
+  &:after
+    content: "▾"
+    text-align center
+    display block
+    position absolute
+    right 0
+    top 0
+    width (unit * 1.5)
+    padding (unit * 0.35) 0 (unit * 0.35)
+    color background
+    background-color darken(call_to_action, 20%)
+    transition background-color 0.5s
+
+  &:hover
+    &:after
+      background-color darken(call_to_action, 10%)
+
+

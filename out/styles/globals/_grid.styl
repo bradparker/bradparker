@@ -1,0 +1,23 @@
+col_span(n, total)
+  
+  display inline-block
+  width 100% / total * n 
+
+  box-sizing(border-box)
+  padding 0 gutter / 2
+  
+  font-size 100%
+  margin-right -0.333em
+  
+  &:first-child, &.first
+    padding-left 0
+
+  &:last-child, &.last
+    padding-right 0
+
+one-half()
+  col_span(1, 2)
+
+one-third()
+  col_span(1, 3)
+

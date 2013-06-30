@@ -1,0 +1,24 @@
+- var scripts = getBlock('scripts')
+- var styles = getBlock('styles')
+
+- styles.add(["/styles/style.css"])
+- scripts.add(["scripts/libs/jquery-1-9-1.js"])
+- scripts.add(["scripts/libs/handlebars-1-0-0-rc-4.js"])
+- scripts.add(["scripts/libs/ember-1-0-0-rc-6.js"])
+- scripts.add(["scripts/libs/ember-data-master.js"])
+- scripts.add(["scripts/app.js"])
+
+!!!5
+html
+  head
+    title= document.title
+    meta= document.tags
+
+    // Styles
+    != styles.toHTML()
+
+    // Scripts
+    != scripts.toHTML()
+
+  body!= content
+        

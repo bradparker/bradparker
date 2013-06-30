@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <meta>
+    <!-- Styles--><link  rel="stylesheet" href="/styles/style.css" />
+    <!-- Scripts--><script defer="defer"  src="scripts/libs/jquery-1-9-1.js"></script><script defer="defer"  src="scripts/libs/handlebars-1-0-0-rc-4.js"></script><script defer="defer"  src="scripts/libs/ember-1-0-0-rc-6.js"></script><script defer="defer"  src="scripts/libs/ember-data-master.js"></script><script defer="defer"  src="scripts/app.js"></script>
+  </head>
+  <body><script type="text/x-handlebars">
+  <h2>Welcome to Ember.js</h2>
+  {{outlet}}
+</script>
+
+
+<script type="text/x-handlebars" data-template-name="index">
+  <ul>
+  {{#each item in model}}
+    <li>{{item}}</li>
+  {{/each}}
+  </ul>
+</script></body>
+</html>

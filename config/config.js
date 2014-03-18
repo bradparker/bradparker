@@ -17,7 +17,7 @@ module.exports = {
     }
   },
   production: {
-    db: 'mongodb://localhost/neem',
+    db: process.env.MONGOLAB_URI,
     root: rootPath,
     app: {
       name: 'neem'

@@ -3,24 +3,24 @@ var path = require('path')
 
 module.exports = {
   development: {
-    db: 'mongodb://localhost/neem-dev',
+    db: 'mongodb://localhost/bradparker-dev',
     root: rootPath,
     app: {
-      name: 'neem'
+      name: 'bradparker'
     }
   },
   test: {
-    db: 'mongodb://localhost/neem-test',
+    db: 'mongodb://localhost/bradparker-test',
     root: rootPath,
     app: {
-      name: 'neem'
+      name: 'bradparker'
     }
   },
   production: {
     db: process.env.MONGOLAB_URI,
     root: rootPath,
     app: {
-      name: 'neem'
+      name: 'bradparker'
     }
   }
 };

@@ -16,7 +16,6 @@ module.exports = function(app, config, passport) {
   }));
 
   //Setting the fav icon and static folder
-  app.use(express.favicon());
   app.use(express.static(config.root + '/public'));
 
   //Don't use logger for test env
@@ -41,10 +40,6 @@ module.exports = function(app, config, passport) {
 
     //dynamic helpers
     app.use(helpers(config.app.name));
-
-    //use passport session
-    app.use(passport.initialize());
-    app.use(passport.session());
 
     //routes should be at the last
     app.use(app.router);

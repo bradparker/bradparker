@@ -1,30 +1,31 @@
 {
-  "name": "neem",
+  "name": "bradparker",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node server"
   },
   "dependencies": {
-    "bcrypt": "*",
     "connect-flash": "*",
     "express": "3.1.0",
     "jade": "*",
     "mongoose": "*",
     "node-dir": "*",
     "node-uuid": "*",
-    "passport": "*",
-    "passport-http-bearer": "*",
-    "view-helpers": "*"
+    "view-helpers": "*",
+    "lodash": "~2.4.1",
+    "q": "~1.0.1",
+    "twitter": "~0.2.9",
+    "superagent": "~0.17.0",
+    "moment": "~2.5.1",
+    "node-env-file": "~0.1.0"
   },
   "devDependencies": {
-    "ember-tools": "*",
     "grunt": "~0.4.1",
     "grunt-contrib-compass": "~0.3.0",
     "grunt-contrib-watch": "~0.4.4",
     "grunt-contrib-jshint": "~0.6.0",
     "grunt-nodemon": "0.0.8",
-    "grunt-concurrent": "~0.3.0",
-    "grunt-shell": "*"
+    "grunt-concurrent": "~0.3.0"
   }
 }

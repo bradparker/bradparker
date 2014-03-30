@@ -1,6 +1,5 @@
 var express  = require('express')
-,   fs       = require('fs')
-,   passport = require('passport');
+,   fs       = require('fs');
 
 //Load configurations
 var env      = process.env.NODE_ENV || 'development',
@@ -16,17 +15,14 @@ fs.readdirSync(models_path).forEach(function(file) {
     require(models_path + '/' + file);
 });
 
-// Passport config
-require('./config/passport')(passport, config);
-
 // Init Express
 var app = express();
 
 // Express settings
-require('./config/express')(app, config, passport);
+require('./config/express')(app, config);
 
 // Routes
-require('./config/routes')(app, passport);
+require('./config/routes')(app);
 
 //Start the app by listening on <port>
 var port = process.env.PORT || 3000;

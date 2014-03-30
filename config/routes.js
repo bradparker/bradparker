@@ -1,19 +1,13 @@
 module.exports = function(app, passport) {
-  // User Routes
-  var users = require('../app/controllers/users_controller');
+  var feed = require('../app/controllers/feed_controller');
+  var imageProxy = require('../app/controllers/image_proxy_controller');
 
-  // Setting up the users api
-  app.post('/users', users.create);
-  app.post('/users/session', users.session);
+  // Feed api
+  app.get('/feed', feed.index);
+  app.get('/feed/refresh', feed.refresh);
 
-  app.get('/users', users.index);
-  app.get('/users/:userId', passport.authenticate('bearer', { session: false }), users.show);
+  // Image proxy api
+  app.get('/image-proxy', imageProxy.proxy);
 
-  // Finish with setting up the userId param
-  app.param('userId', users.user);
-
-  // Home route
-  var index = require('../app/controllers/index_controller');
-  app.get('/', index.render);
 
 };

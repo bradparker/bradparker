@@ -1,4 +1,3 @@
-Brad Parker
-====
+# Personal site
 
-Node, express, angular and mongoose
+Very simple. Uses metalsmith to build a static stite.

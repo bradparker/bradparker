@@ -1,31 +1,30 @@
 {
   "name": "bradparker",
-  "version": "0.0.1",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Personal website dependencies",
+  "main": "index.js",
   "scripts": {
-    "start": "node server"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "connect-flash": "*",
-    "express": "3.1.0",
-    "jade": "*",
-    "mongoose": "*",
-    "node-dir": "*",
-    "node-uuid": "*",
-    "view-helpers": "*",
-    "lodash": "~2.4.1",
-    "q": "~1.0.1",
-    "twitter": "~0.2.9",
-    "superagent": "~0.17.0",
-    "moment": "~2.5.1",
-    "node-env-file": "~0.1.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bradparker/bradparker.git"
   },
+  "author": "Brad Parker <hi@bradparker.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bradparker/bradparker/issues"
+  },
+  "homepage": "https://github.com/bradparker/bradparker",
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-compass": "~0.3.0",
-    "grunt-contrib-watch": "~0.4.4",
-    "grunt-contrib-jshint": "~0.6.0",
-    "grunt-nodemon": "0.0.8",
-    "grunt-concurrent": "~0.3.0"
+    "metalsmith": "^1.7.0",
+    "metalsmith-autoprefixer": "^1.0.2",
+    "metalsmith-collections": "^0.7.0",
+    "metalsmith-ignore": "^0.1.2",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-sass": "^1.0.0",
+    "metalsmith-serve": "0.0.3",
+    "metalsmith-templates": "^0.7.0",
+    "metalsmith-watch": "^1.0.1"
   }
 }
